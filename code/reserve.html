@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve | The Copper Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/venue.css">
+</head>
+<body>
+    <aside class="side-rail">
+        <a class="brand-lockup" href="index.html">
+            <span class="brand-mark">CR</span>
+            <span><strong>The Copper Room</strong><small>Cocktail Bar · Listening Lounge</small></span>
+        </a>
+        <nav class="rail-nav" aria-label="Primary navigation">
+            <a href="index.html"><span>01</span>The Door</a>
+            <a href="wall.html"><span>02</span>Pour Wall</a>
+            <a href="calendar.html"><span>03</span>Night Ledger</a>
+            <a href="rooms.html"><span>04</span>Room Map</a>
+            <a class="active" href="reserve.html"><span>05</span>Reserve</a>
+        </nav>
+        <div class="rail-note">
+            <p class="eyebrow">Visit details</p>
+            <p>Example Street, ABC</p>
+            <p>(250) 000-0000</p>
+        </div>
+    </aside>
+
+    <main class="site-main">
+        <header class="page-intro reserve-intro">
+            <p class="kicker">Reserve</p>
+            <h1>A booking page that feels like a guest-list card.</h1>
+            <p class="lead">This can connect later to Formspree, Google Forms, email, WhatsApp, or a real reservation system. For now, it is a polished static demo form.</p>
+        </header>
+
+        <section class="booking-layout section-pad">
+            <form class="guest-card" action="#" method="post">
+                <div class="form-topline">
+                    <span>Guest Request</span>
+                    <strong>CR-000</strong>
+                </div>
+                <label>
+                    Name
+                    <input type="text" name="name" placeholder="Your name">
+                </label>
+                <label>
+                    Phone
+                    <input type="tel" name="phone" placeholder="(250) 000-0000">
+                </label>
+                <div class="form-row">
+                    <label>
+                        Guests
+                        <select name="guests">
+                            <option>2 guests</option>
+                            <option>3-4 guests</option>
+                            <option>5-6 guests</option>
+                            <option>7+ guests</option>
+                        </select>
+                    </label>
+                    <label>
+                        Preferred time
+                        <input type="text" name="time" placeholder="Friday, 8 PM">
+                    </label>
+                </div>
+                <label>
+                    Table style
+                    <select name="table-style">
+                        <option>Bar rail</option>
+                        <option>Booth</option>
+                        <option>Listening corner</option>
+                        <option>Group table</option>
+                    </select>
+                </label>
+                <label>
+                    Notes
+                    <textarea name="notes" rows="5" placeholder="Birthday, group booking, accessibility needs, or special request"></textarea>
+                </label>
+                <button type="submit">Send request</button>
+                <p class="form-disclaimer">Demo only. This static form needs a real form handler before going live.</p>
+            </form>
+
+            <aside class="visit-stack">
+                <article>
+                    <p class="eyebrow">Address</p>
+                    <h2>Example Street, ABC</h2>
+                    <p>Use this area for a real Google Maps embed, parking note, bus access, or neighbourhood directions.</p>
+                </article>
+                <article>
+                    <p class="eyebrow">Phone</p>
+                    <h2>(250) 000-0000</h2>
+                    <p>For a real client, this can become a click-to-call button on mobile.</p>
+                </article>
+                <article>
+                    <p class="eyebrow">Hours</p>
+                    <h2>4 PM — Late</h2>
+                    <p>Monday to Sunday. Event nights and private bookings can be updated separately.</p>
+                </article>
+            </aside>
+        </section>
+
+        <section class="map-placeholder section-pad">
+            <div>
+                <p class="eyebrow">Map placeholder</p>
+                <h2>Google Maps embed area</h2>
+                <p>Replace this block with a real embedded map when customizing for a client.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
