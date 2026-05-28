@@ -1370,3 +1370,40 @@ body::after {
         transform: none;
     }
 }
+
+/* =========================================================
+   Subtle current-day highlight for Night Ledger
+   ========================================================= */
+
+.ledger-row.today-row {
+    transform: none;
+    border-color: rgba(238, 168, 90, 0.36);
+    background:
+        linear-gradient(90deg, rgba(238, 168, 90, 0.08), rgba(255, 255, 255, 0.025)),
+        rgba(255, 255, 255, 0.025);
+    box-shadow:
+        0 0 28px rgba(238, 168, 90, 0.08),
+        inset 0 0 0 1px rgba(238, 168, 90, 0.08);
+}
+
+.ledger-row.today-row::after {
+    content: "TONIGHT";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 5px 8px;
+    border-radius: 999px;
+    color: rgba(238, 168, 90, 0.92);
+    background: rgba(238, 168, 90, 0.08);
+    border: 1px solid rgba(238, 168, 90, 0.2);
+    font-size: 0.62rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+}
+
+.ledger-row.today-row .date-stamp {
+    color: var(--copper-light);
+    background: rgba(238, 168, 90, 0.08);
+    border-color: rgba(238, 168, 90, 0.45);
+    box-shadow: 0 0 22px rgba(238, 168, 90, 0.12);
+}
