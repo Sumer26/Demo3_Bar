@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | The Copper Room</title>
+    <link rel="stylesheet" href="css/copper-room.css">
+</head>
+<body>
+    <header class="site-shell">
+        <a class="brand-block" href="entry.html" aria-label="The Copper Room home">
+            <span class="brand-mark">CR</span>
+            <span>
+                <strong>The Copper Room</strong>
+                <small>Cocktail Bar & Listening Lounge</small>
+            </span>
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+            <a href="entry.html">Door</a>
+            <a href="pours.html">Pour List</a>
+            <a href="tonight.html">Tonight</a>
+            <a href="the-room.html">The Room</a>
+            <a class="nav-pill active" href="book.html">Book</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-hero section-pad">
+            <div>
+                <p class="eyebrow">Book a table</p>
+                <h1>Reservations, private nights, and simple contact in one place.</h1>
+                <p class="lead">This page replaces a basic contact page with a stronger hospitality-focused booking layout.</p>
+            </div>
+            <div class="contact-card">
+                <span>Call</span>
+                <strong>(250) 000-0000</strong>
+                <span>Visit</span>
+                <strong>Example Street, ABC</strong>
+            </div>
+        </section>
+
+        <section class="booking-options section-pad compact-top">
+            <article>
+                <span class="option-icon">2</span>
+                <h2>Date Night Booth</h2>
+                <p>Low booth seating for two, ideal for cocktails and a quieter corner.</p>
+            </article>
+            <article>
+                <span class="option-icon">4</span>
+                <h2>Small Group Table</h2>
+                <p>Comfortable table seating for after-work drinks or weekend plans.</p>
+            </article>
+            <article>
+                <span class="option-icon">8+</span>
+                <h2>Private Corner</h2>
+                <p>Group reservation option for birthdays, casual parties, or team nights.</p>
+            </article>
+        </section>
+
+        <section class="form-map section-pad compact-top">
+            <form class="booking-form" action="#" method="post">
+                <p class="eyebrow">Reservation request</p>
+                <h2>Send a booking request</h2>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name">
+
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="(250) 000-0000">
+
+                <label for="group">Group size</label>
+                <select id="group" name="group">
+                    <option>2 people</option>
+                    <option>3–4 people</option>
+                    <option>5–8 people</option>
+                    <option>Private event inquiry</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Preferred date, time, and seating style"></textarea>
+
+                <button class="button primary" type="submit">Request Booking</button>
+            </form>
+
+            <aside class="visit-panel">
+                <p class="eyebrow">Visit info</p>
+                <h2>Example Street, ABC</h2>
+                <div class="hours-grid">
+                    <span>Mon–Wed</span><strong>5 PM – 11 PM</strong>
+                    <span>Thu</span><strong>5 PM – 12 AM</strong>
+                    <span>Fri–Sat</span><strong>5 PM – 2 AM</strong>
+                    <span>Sun</span><strong>Closed</strong>
+                </div>
+                <div class="map-placeholder">Map placeholder</div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer-grid">
+        <div><strong>The Copper Room</strong><p>Booking and visit info demo page.</p></div>
+        <div><span>Phone</span><p>(250) 000-0000</p></div>
+        <div><span>Address</span><p>Example Street, ABC</p></div>
+    </footer>
+</body>
+</html>
