@@ -1407,3 +1407,24 @@ body::after {
     border-color: rgba(238, 168, 90, 0.45);
     box-shadow: 0 0 22px rgba(238, 168, 90, 0.12);
 }
+/* =========================================================
+   Night Ledger feature status label
+   ========================================================= */
+
+.today-feature-copy {
+    display: grid;
+    gap: 6px;
+}
+
+.feature-status {
+    margin: 0;
+    color: rgba(238, 168, 90, 0.92);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.today-card .eyebrow {
+    margin-bottom: 0;
+}
